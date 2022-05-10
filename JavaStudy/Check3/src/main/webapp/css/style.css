@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.header {
+	background-color:#808080;
+}
+
+.header-lg{
+	padding: 10px;
+	color: 	#FFF;
+}
+
+.header-date {
+	padding: 10px;
+	font-size: 10px;
+}
+.main{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+table td:nth-chid(1) {
+	text-align: center;
+}
+
+.footer {
+	background-color:#808080;
+}
+
+.footer-lg{
+	padding: 10px;
+	color: 	#FFF;
+}
+
+
+.hoge {
+	display: inline-block;
+	padding: 10px;
+	color:	#FFF;
+}
