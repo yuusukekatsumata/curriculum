@@ -43,14 +43,14 @@ public class DBSelect {
             connection = DriverManager.getConnection(JDBC_CONNECTION, USER, PASS);
             statement = connection.createStatement();
             // 問⑤ SHOHIN_IDが001と020のものを表示させるためのSQL文を記述しましょう。
-            String SQL = "SELECT * FROM TB_SHOHIN WHERE SHOHIN_ID ='001' OR SHOHIN_ID ='020'";
+            String SQL = "SELECT * FROM tb_shohin WHERE shohin_id IN('001' , '020')";
             resultSet = statement.executeQuery(SQL);
 
             while (resultSet.next()) {
                 // 問⑥ それぞれカラム名を入力してください。
-                String column1 = resultSet.getString("SHOHIN_ID");
-                String column2 = resultSet.getString("SHOHIN_NAME");
-                int column3 = resultSet.getInt("TANKA");
+                String column1 = resultSet.getString("shohin_id");
+                String column2 = resultSet.getString("shohin_name");
+                int column3 = resultSet.getInt("tanka");
 
                 System.out.print(column1 + ",");
                 System.out.print(column2 + ",");

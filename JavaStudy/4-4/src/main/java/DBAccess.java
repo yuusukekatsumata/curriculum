@@ -46,7 +46,7 @@ public class DBAccess {
             connection = DriverManager.getConnection(JDBC_CONNECTION, USER, PASS);
             statement = connection.createStatement();
 
-            String SQL = "SELECT * FROM TB_SHOHIN";
+            String SQL = "SELECT * FROM tb_shohin";
             resultSet = statement.executeQuery(SQL);
 
             while (resultSet.next()) {

@@ -50,14 +50,10 @@ public class DBPrepared {
             * 問⑤ SHOHIN_IDが001と020のものを表示できるように
             * PreparedStatementインターフェースを使って値をSQL文にセットしてみましょう。
             */
+           
+            preparedStatement.setString(1, "001");
+            preparedStatement.setString(2, "020");
             
-            for (int i = 0; i < 3; i++) {
-            preparedStatement.setString(1, "SELECT * FROM TB_SHOHIN WHERE SHOHIN_ID ='001'");
-            preparedStatement.setString(2, "SELECT * FROM TB_SHOHIN WHERE SHOHIN_ID ='020'");
-            
-            preparedStatement.executeUpdate();
-        }
-
             resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {
