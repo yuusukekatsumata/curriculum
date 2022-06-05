@@ -1,7 +1,5 @@
 package bean;
-/**
- * ・社員情報データ（モデル）
- */
+
 public class EmployeeBean {
     private String Id;
     private String PassWord;
